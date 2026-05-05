@@ -1,15 +1,15 @@
 import { Suspense, useState } from "react";
 // import ALLTools from "../components/allTools/AllTools";
 import Banner from "../components/banner/Banner";
-// import Choose from "../components/chooseSection/Choose";
-// import CTASection from "../components/ctaSection/CTASection";
-// import Footer from "../components/footer/Footer";
+import Choose from "../components/chooseSection/Choose";
+import CTASection from "../components/ctaSection/CTASection";
+import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
-// import Pricing from "../components/pricingSection/Pricing";
+import Pricing from "../components/pricingSection/Pricing";
 // import Rating from "../components/ratingSection/Rating";
-// import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
-// import Navbar from "../components/navbar/Navbar";
+
 
 // const productDataFetch = fetch("/productData.json").then((res) => res.json());
 
@@ -23,14 +23,14 @@ const [addToCart,setAddToCart]=useState([])
       <Navbar addToCart={addToCart}/>
 
       <Banner />
+ 
+      
 
-      {/* <Banner />
-
-      <div className="bg-linear-to-r from-[#4F39F6]  to-[#9B5CF6]">
+      {/* <div className="bg-linear-to-r from-[#4F39F6]  to-[#9B5CF6]">
         <Rating />
-      </div>
+      </div> */}
 
-      <Suspense
+      {/* <Suspense
         fallback={
           <div className="flex justify-center py-20">
             <span className="loading loading-spinner loading-lg text-primary"></span>
@@ -38,7 +38,7 @@ const [addToCart,setAddToCart]=useState([])
         }
       >
         <ALLTools productDataFetch={productDataFetch} addToCart={addToCart} setAddToCart={setAddToCart}/>
-      </Suspense>
+      </Suspense> */}
 
       <Choose />
 
@@ -52,7 +52,7 @@ const [addToCart,setAddToCart]=useState([])
         <Footer />
       </div>
 
-      <ToastContainer/> */}
+      <ToastContainer/> 
     </div>
   );
 };
