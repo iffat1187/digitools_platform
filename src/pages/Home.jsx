@@ -1,6 +1,6 @@
 import { Suspense, useState } from "react";
 // import ALLTools from "../components/allTools/AllTools";
-// import Banner from "../components/banner/Banner";
+import Banner from "../components/banner/Banner";
 // import Choose from "../components/chooseSection/Choose";
 // import CTASection from "../components/ctaSection/CTASection";
 // import Footer from "../components/footer/Footer";
@@ -21,6 +21,8 @@ const [addToCart,setAddToCart]=useState([])
     <div>
         
       <Navbar addToCart={addToCart}/>
+
+      <Banner />
 
       {/* <Banner />
 
