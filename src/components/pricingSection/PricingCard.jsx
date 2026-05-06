@@ -1,5 +1,5 @@
 const PricingCard = ({ pricing }) => {
-  
+
 
   const { plan, subtitle, price, period, features, buttonText, tag } = pricing;
 
