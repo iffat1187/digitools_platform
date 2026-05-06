@@ -5,7 +5,7 @@ import SelectedCart from '../../ui/SelectedCart'
 const ALLTools = ({ productDataFetch, addToCart, setAddToCart }) => {
 	const productData = use(productDataFetch)
 	const [selected, setSelected] = useState('allProduct')
-
+console.log("productData",productData);
 	return (
 		<section className='my-container'>
 			<div>
